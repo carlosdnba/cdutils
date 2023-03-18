@@ -1,6 +1,6 @@
 {
   "name": "@carlos-daniel/utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "oclif example Hello World CLI",
   "author": "Carlos Daniel @carlosdnba",
   "bin": {
