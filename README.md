@@ -20,7 +20,7 @@ $ npm install -g @carlos-daniel/utils
 $ cdu COMMAND
 running command...
 $ cdu (--version)
-@carlos-daniel/utils/0.1.0 darwin-arm64 node-v16.19.1
+@carlos-daniel/utils/0.2.0 darwin-arm64 node-v16.19.1
 $ cdu --help [COMMAND]
 USAGE
   $ cdu COMMAND
@@ -67,7 +67,7 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [dist/commands/copy-envs.ts](https://github.com/carlosdnba/cdutils/blob/v0.1.0/dist/commands/copy-envs.ts)_
+_See code: [dist/commands/copy-envs.ts](https://github.com/carlosdnba/utils/blob/v0.2.0/dist/commands/copy-envs.ts)_
 
 ## `cdu hello world`
 
