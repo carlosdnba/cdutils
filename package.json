@@ -19,9 +19,15 @@
   "dependencies": {
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.4.0"
+    "@oclif/plugin-plugins": "^2.4.0",
+    "archiver": "^5.3.1",
+    "debug": "4.3.2",
+    "fs-extra": "^11.1.0"
   },
   "devDependencies": {
+    "@types/archiver": "^5.3.2",
+    "@types/debug": "^4.1.7",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^16.18.14",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
