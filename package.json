@@ -6,10 +6,10 @@
   "bin": {
     "cdu": "./bin/run"
   },
-  "homepage": "https://github.com/carlosdnba/cdutils",
+  "homepage": "https://github.com/carlosdnba/utils",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "carlosdnba/cdutils",
+  "repository": "carlosdnba/utils",
   "files": [
     "/bin",
     "/dist",
