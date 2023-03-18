@@ -2,5 +2,19 @@
   "extends": [
     "oclif",
     "oclif-typescript"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
+    "camelcase": "off",
+    "indent": "off",
+    "no-await-in-loop": "off",
+    "no-warning-comments": "off",
+    "object-curly-spacing": "off",
+    "operator-linebreak": "off",
+    "semi": "off",
+    "unicorn/no-array-reduce": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/prefer-object-from-entries": "off",
+    "valid-jsdoc": "off"
+  }
 }
