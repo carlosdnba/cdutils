@@ -16,11 +16,11 @@ oclif example Hello World CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cdutils
+$ npm install -g @carlos-daniel/utils
 $ cdu COMMAND
 running command...
 $ cdu (--version)
-cdutils/0.0.0 darwin-arm64 node-v16.19.1
+@carlos-daniel/utils/0.1.0 darwin-arm64 node-v16.19.1
 $ cdu --help [COMMAND]
 USAGE
   $ cdu COMMAND
@@ -29,7 +29,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cdu hello PERSON`](#cdu-hello-person)
+* [`cdu copy-envs`](#cdu-copy-envs)
 * [`cdu hello world`](#cdu-hello-world)
 * [`cdu help [COMMANDS]`](#cdu-help-commands)
 * [`cdu plugins`](#cdu-plugins)
@@ -42,29 +42,32 @@ USAGE
 * [`cdu plugins:uninstall PLUGIN...`](#cdu-pluginsuninstall-plugin-2)
 * [`cdu plugins update`](#cdu-plugins-update)
 
-## `cdu hello PERSON`
+## `cdu copy-envs`
 
-Say hello
+Are you moving to a new machine and wants to get all the env files you might have around?
 
 ```
 USAGE
-  $ cdu hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
+  $ cdu copy-envs -p <value> [-t <value>] [-c]
 
 FLAGS
-  -f, --from=<value>  (required) Who is saying hello
+  -c, --compress        Compress the envs directory into a zip file
+  -p, --path=<value>    (required) Path to the directory where your .env files are located
+  -t, --target=<value>  Custom path to the directory where your .env files will be copied to
 
 DESCRIPTION
-  Say hello
+
+  Are you moving to a new machine and wants to get all the env files you might have around?
+  This script is for you! Or at least for me for all the times I had to go through all my projects and copy the .env
+  files to the new machine.
+  This will copy all the .env files to a new directory whilst recreating the folders structure.
 
 EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
+  $ cdu copy-envs
+  hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/carlosdnba/cdutils/blob/v0.0.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/copy-envs.ts](https://github.com/carlosdnba/cdutils/blob/v0.1.0/dist/commands/copy-envs.ts)_
 
 ## `cdu hello world`
 
