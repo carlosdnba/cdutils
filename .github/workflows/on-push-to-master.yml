@@ -5,19 +5,10 @@ on:
     branches: [master]
 
 jobs:
-  release:
+  release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: Install release-please
-        run: |
-          node -v
-          npm i release-please -g
-      - name: Open release-please PR
-        env:
-          GH_TOKEN : ${{ secrets.GH_TOKEN }}
-          PULL_REQUEST_REPO: ${{ github.repository }}
-        run: |
-          release-please --version
-          echo $PULL_REQUEST_REPO $PULL_REQUEST_OWNER
-          release-please release-pr --token=$GH_TOKEN --repo-url=$PULL_REQUEST_REPO
-  
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: release-please-action
