@@ -22,8 +22,7 @@
     "@oclif/plugin-plugins": "^2.4.0",
     "archiver": "^5.3.1",
     "debug": "4.3.2",
-    "fs-extra": "^11.1.0",
-    "standard-version": "^9.5.0"
+    "fs-extra": "^11.1.0"
   },
   "devDependencies": {
     "@types/archiver": "^5.3.2",
@@ -60,8 +59,7 @@
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",
     "prepack": "yarn build && oclif manifest && oclif readme",
-    "version": "oclif readme && git add README.md",
-    "publish": "standard-version"
+    "version": "oclif readme && git add README.md"
   },
   "engines": {
     "node": ">=12.0.0"
