@@ -1,0 +1,15 @@
+name: version, tag and github release
+
+on:
+  push:
+    # branches: [master]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install release-please
+        run: |
+          node -v
+          npm i release-please -g
+  
