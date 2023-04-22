@@ -19,7 +19,7 @@
   "dependencies": {
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.4.0",
+    "@oclif/plugin-plugins": "^2.4.7",
     "archiver": "^5.3.1",
     "debug": "4.3.2",
     "fs-extra": "^11.1.0"
